@@ -12,6 +12,7 @@ const Registration = () => {
     const name = form.get("name");
     if (name.length < 5) {
       setError({ ...error, name: "name should be more then 5 character" });
+      return
     }
     const email = form.get("email");
     const photo = form.get("photo");
